@@ -8,6 +8,7 @@ class bank_account {
   private $account_type;
   private $password;
 
+    //Krisha Mae D.
   public function __construct($account_id, $account_name, $balance, $account_type, $password)
   {
     $this->account_id = $account_id;
@@ -16,6 +17,7 @@ class bank_account {
     $this->account_type = $account_type;
     $this->password = $password;
   }
+     //Krisha Mae D.
     public function createbankaccount($account_name, $balance,$account_type,$password) {
         $account_name = mysqli_real_escape_string($this->conn, $account_name);
         $account_type = mysqli_real_escape_string($this->conn, $account_type);
@@ -25,6 +27,7 @@ class bank_account {
         $query = "INSERT INTO bank_account (account_name, balance,account_type,password) VALUES ('$account_name', '$balance','$account_type','$password')";
         return mysqli_query($this->conn, $query);
     }
+     //Krisha Mae D.
     public function inquire()
   {
     global $conn;
@@ -36,6 +39,7 @@ class bank_account {
     $row = $result->fetch_assoc();
     return $row['balance'];
   }
+     //Krisha Mae D.
     public function deposit($amount)
     {
       global $conn;
@@ -49,7 +53,7 @@ class bank_account {
         return "Error depositing: " . $stmt->error;
       }
     }
-  
+   //Krisha Mae D.
     public function withdraw($amount)
     {
       global $conn;

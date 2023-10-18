@@ -12,17 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $account_type = $_POST['account_type'];
         $password = $_POST['password'];
         $bank_account->createbankaccount($account_name, $balance,$account_type,$password);//createPerson is a method on person.php line 11
-    // } elseif (isset($_POST['update'])) {
-    //     // Update a person
-    //     $id = $_POST['update_id'];
-    //     $name = $_POST['update_name'];
-    //     $age = $_POST['update_age'];
-    //     $person->updatePerson($id, $name, $age);
-    // } elseif (isset($_POST['delete'])) {
-    //     // Delete a person
-    //     $id = $_POST['delete_id'];
-    //     $person->deletePerson($id);
-    // }
 }
 
 }

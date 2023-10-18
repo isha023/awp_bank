@@ -57,11 +57,7 @@ mysqli_close($conn);
 <head>
     <title>Bank Operations</title>
 </head>
-<body>
-    
-
-   
-    
+<body>  
    
     <h2>Bank Operations</h2>
   <form action="index.php" method="post">
